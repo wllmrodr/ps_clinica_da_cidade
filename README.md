@@ -70,7 +70,7 @@ Caso deseje executar o projeto na sua máquina local:
     ```
 
 4.  **Configure as Variáveis de Ambiente:**
-    * Crie uma cópia do ficheiro `.env.example` e renomeie-a para `.env`.
+    * Crie uma cópia do arquivo `.env.example` e renomeie-a para `.env`.
     * Preencha as variáveis `VITE_GEMINI_API_KEY` e `VITE_GOOGLE_FORM_URL` com as suas próprias chaves e URLs.
 
 5.  **Inicie o servidor de desenvolvimento:**
