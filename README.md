@@ -1,43 +1,36 @@
-Desafio Técnico - Página "Indique e Ganhe"
-Projeto desenvolvido como solução para o Desafio Técnico da vaga de Desenvolvedor(a). A aplicação é uma landing page completa e funcional para o programa "Indique e Ganhe", construída com React e utilizando o ecossistema Google (Forms e Apps Script) como uma solução de backend serverless para a recolha de dados e envio de e-mails de confirmação.
+Desafio Técnico - Página "Indique e Ganhe" (Clínica da Cidade)
+🚀 Projeto disponível online em: https://ps-clinica-da-cidade.vercel.app/
+Este repositório contém a solução completa para o Desafio Técnico da vaga de Desenvolvedor(a). O projeto evoluiu de uma simples landing page para uma aplicação web full-stack, interativa e segura, demonstrando um fluxo de trabalho de desenvolvimento moderno e atenção aos detalhes, desde o design até a publicação (deploy).
 
-🚀 Sobre a Solução Implementada
-O objetivo principal era criar uma interface web onde um utilizador (indicador) pudesse submeter os seus dados e indicar até 5 amigos. Para além de uma interface moderna e responsiva, o projeto precisava de uma forma de armazenar esses dados.
+💡 Conhecimentos Envolvidos no Projeto
+A construção deste projeto foi guiada por uma jornada de refinamento contínuo, com o objetivo de entregar uma solução que não só cumprisse os requisitos, mas que também se alinhasse com a identidade visual da Clínica da Cidade e utilizasse tecnologias modernas de forma criativa.
 
-A solução implementada utiliza o Google Forms como uma base de dados "serverless". O formulário React não submete os dados para um servidor tradicional, mas sim para um Google Form oculto. Isto aciona automaticamente a gravação dos dados numa Folha de Cálculo Google associada.
+Design e Identidade Visual: A primeira etapa foi criar uma interface que refletisse o profissionalismo e a confiança da marca. O cabeçalho, a cor ciano, a tipografia e o logo foram cuidadosamente recriados para serem fiéis ao site oficial da empresa, incluindo os links para as redes sociais.
 
-Para a funcionalidade de notificação por e-mail, um Google Apps Script é ativado sempre que uma nova linha é adicionada à folha de cálculo. O script lê os dados do novo indicado e envia um e-mail de confirmação personalizado, utilizando o serviço MailApp do Google.
+Solução de Backend Serverless: Para a recolha de dados e envio de e-mails, foi implementada uma arquitetura serverless e sem custos utilizando o ecossistema Google. O formulário React submete os dados de forma segura para um Google Form oculto, que por sua vez popula uma Folha de Cálculo Google.
 
-Esta abordagem é:
+Automação de E-mails com Apps Script: Um Google Apps Script é acionado automaticamente a cada nova submissão. Ele lê os dados da folha de cálculo e envia um e-mail de confirmação personalizado para cada amigo indicado, utilizando o serviço MailApp do Google.
 
-Sem custos: Utiliza apenas ferramentas gratuitas do Google.
+Inteligência Artificial com Gemini: Para enriquecer a experiência do utilizador, foi integrada a API do Gemini. Após a submissão bem-sucedida, a IA gera uma mensagem de agradecimento única e calorosa, tornando a interação mais humana e menos robótica.
 
-Robusta e Fiável: Aproveita a infraestrutura segura do Google.
+Segurança com Variáveis de Ambiente: Todas as chaves de API e URLs sensíveis são geridas através de Variáveis de Ambiente. O código no repositório está limpo de segredos, seguindo as melhores práticas de segurança. As chaves são carregadas a partir de um ficheiro .env localmente e configuradas no ambiente de produção.
 
-Serverless: Não requer a configuração ou manutenção de um servidor de backend.
-
-Adicionalmente, foi integrada a API do Gemini para gerar uma mensagem de agradecimento personalizada no modal de sucesso, enriquecendo a experiência do utilizador.
+Publicação na Web (Deploy): Para garantir que a aplicação pudesse ser testada por qualquer pessoa, em qualquer lugar, sem necessidade de configuração, o projeto foi publicado na Vercel. A plataforma está integrada com o GitHub para deploy contínuo, garantindo que o site está sempre atualizado com a versão mais recente do código.
 
 ✨ Funcionalidades
 Formulário Dinâmico: Permite ao utilizador adicionar ou remover campos para até 5 indicados.
 
-Validação Abrangente: Validação em tempo real para:
-
-Campos obrigatórios.
-
-Formato de e-mail e telefone (com máscara para o padrão brasileiro).
-
-Exigência de nome e sobrenome.
-
-Duplicação de dados (nome, e-mail, telefone) entre todos os participantes.
+Validação Abrangente: Validação em tempo real para campos obrigatórios, formato de e-mail, máscara de telefone, exigência de sobrenome e duplicação de dados.
 
 Backend com Google Forms: Submissão de dados segura e direta para uma Folha de Cálculo Google.
 
-Envio de E-mail Automatizado: Utiliza o Google Apps Script para enviar e-mails de confirmação a cada amigo indicado.
+Envio de E-mail Automatizado: Utiliza o Google Apps Script para enviar e-mails de confirmação.
 
-Integração com IA: Utiliza a API do Gemini para criar uma mensagem de sucesso dinâmica e personalizada.
+Integração com IA (Gemini): Cria uma mensagem de sucesso dinâmica e personalizada.
 
-Design Responsivo: Interface totalmente funcional em desktops, tablets e telemóveis.
+Design Fiel à Marca: Interface e componentes inspirados no site oficial da Clínica da Cidade.
+
+Totalmente Responsivo: Funcional em desktops, tablets e telemóveis.
 
 🛠️ Tecnologias Utilizadas
 Tecnologia
@@ -46,28 +39,65 @@ Contexto de Utilização
 
 React.js
 
-Biblioteca principal para a construção de uma interface de utilizador reativa e componentizada.
+Biblioteca principal para a construção da interface reativa.
 
 Vite
 
-Ferramenta de build moderna que proporciona um ambiente de desenvolvimento extremamente rápido.
+Ferramenta de build para um ambiente de desenvolvimento rápido.
 
 Tailwind CSS
 
-Framework CSS utility-first para a criação de um design moderno e responsivo de forma eficiente.
+Framework CSS para um design moderno e responsivo.
 
 Google Forms
 
-Utilizado como o endpoint que recebe os dados do formulário React.
+Utilizado como o endpoint que recebe os dados do formulário.
 
 Google Sheets
 
-Funciona como a base de dados, armazenando todas as indicações de forma organizada.
+Funciona como a base de dados, armazenando as indicações.
 
 Google Apps Script
 
-A lógica de backend que é acionada para processar os dados e enviar os e-mails de confirmação.
+A lógica de backend que envia os e-mails de confirmação.
 
 Gemini API
 
-Utilizada para a geração de texto por IA, tornando a mensagem de sucesso mais interativa e pessoal.
+Utilizada para a geração de texto por IA.
+
+Vercel
+
+Plataforma de alojamento para a publicação e deploy contínuo da aplicação.
+
+⚙️ Instruções de Execução
+A aplicação está disponível publicamente e pode ser acedida sem qualquer configuração.
+
+Acesso Online (Recomendado)
+URL: https://ps-clinica-da-cidade.vercel.app/
+
+Execução Local (Para Desenvolvimento)
+Caso deseje executar o projeto na sua máquina local:
+
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/ps-clinica-da-cidade.git
+
+Navegue até a pasta do projeto:
+
+cd ps-clinica-da-cidade
+
+Instale as dependências:
+
+npm install
+
+Configure as Variáveis de Ambiente:
+
+Crie uma cópia do ficheiro .env.example e renomeie-a para .env.
+
+Preencha as variáveis VITE_GEMINI_API_KEY e VITE_GOOGLE_FORM_URL com as suas próprias chaves e URLs.
+
+Inicie o servidor de desenvolvimento:
+
+npm run dev
+
+A aplicação estará a correr em http://localhost:5173.
