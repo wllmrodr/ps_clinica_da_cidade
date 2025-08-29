@@ -77,4 +77,8 @@ Caso deseje executar o projeto na sua máquina local:
     ```bash
     npm run dev
     ```
+<<<<<<< HEAD
     A aplicação provavelmente rodará em `http://localhost:5173`.
+=======
+    A aplicação provavelmente rodará em `http://localhost:5173`.
+>>>>>>> 51177f822b497d7d049fba157d414fdaf92de696
