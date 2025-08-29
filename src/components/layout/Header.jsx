@@ -10,7 +10,7 @@ import logoDaEmpresa from '../../assets/images/logo.jpg';
 const Header = () => (
     <header className="bg-[#00adbd] shadow-md text-white">
         <div className="bg-opacity-10 bg-black">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-7">
                 <nav className="flex space-x-8 text-base items-center">
                     <a href="https://clinicadacidade.com.br/quem-somos/" className="hover:underline border-b-2 border-white pb-1">Quem somos</a>
                     <a href="https://clinicadacidade.com.br/seja-um-medico-parceiro-2/" className="hover:underline">Seja um médico parceiro</a>
@@ -25,7 +25,7 @@ const Header = () => (
                 </div>
             </div>
         </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-9">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
             <div className="flex items-center">
                 <a href="#" className="flex items-center">
                     <img src={logoDaEmpresa} alt="Clínica da Cidade Logo" className="h-20 w-auto" />
