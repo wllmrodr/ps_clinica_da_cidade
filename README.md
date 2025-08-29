@@ -14,7 +14,7 @@ A construção deste projeto foi guiada por uma jornada de refinamento contínuo
 
 | Etapa | Descrição |
 | :--- | :--- |
-| **1. Design e Identidade Visual** | A primeira etapa foi criar uma interface que refletisse o profissionalismo e a confiança da marca. O cabeçalho, as cor Ciano, a tipografia e o logo foram cuidadosamente recriados para serem fiéis ao site oficial da empresa, incluindo os links para as redes sociais da empresa. |
+| **1. Design e Identidade Visual** | A primeira etapa foi criar uma interface que refletisse o profissionalismo e a confiança da marca. O cabeçalho, a cor Ciano, a tipografia e o logo foram cuidadosamente recriados para serem fiéis ao site oficial da empresa, incluindo os links para as redes sociais da empresa. |
 | **2. Backend Serverless** | Para a recolha de dados e envio de e-mails, foi implementada uma arquitetura serverless e sem custos utilizando o ecossistema Google, com Google Forms e Google Sheets. |
 | **3. Automação de E-mails** | Um Google Apps Script é acionado automaticamente a cada nova submissão, lendo os dados da folha de cálculo e enviando um e-mail de confirmação personalizado para cada amigo indicado. |
 | **4. Inteligência Artificial** | Para enriquecer a experiência, foi integrada a API do Gemini, que gera uma mensagem de agradecimento única e calorosa após a submissão, tornando a interação mais humana. |
