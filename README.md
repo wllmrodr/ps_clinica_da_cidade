@@ -2,7 +2,7 @@
 
 ### 🚀 **Projeto disponível online em:** [**https://ps-clinica-da-cidade.vercel.app/**](https://ps-clinica-da-cidade.vercel.app/)
 
-> O que começou como o desafio de criar uma simples landing page evoluiu para uma aplicação web full-stack, interativa e segura. Este README documenta a jornada e o fluxo de trabalho de desenvolvimento moderno adotado, desde a concepção do design até a publicação (deploy) final.
+> O que começou como o desafio de criar uma simples landing page evoluiu para uma aplicação web full-stack, interativa e segura. Este README documenta a jornada e o fluxo de trabalho de desenvolvimento adotado, desde a concepção do design até a publicação (deploy) final.
 
 ---
 
@@ -25,10 +25,10 @@ A construção deste projeto foi guiada por uma jornada de refinamento contínuo
 * **Formulário Dinâmico**: Permite ao utilizador adicionar ou remover campos para até 5 indicados.
 * **Validação Abrangente**: Validação em tempo real para campos obrigatórios, formato de e-mail, máscara de telefone, exigência de sobrenome e duplicação de dados.
 * **Backend com Google Forms**: Submissão de dados segura e direta para uma Folha de Cálculo Google.
-* **Envio de E-mail Automatizado**: Utiliza o Google Apps Script para enviar e-mails de confirmação.
+* **Envio de E-mail Automatizado**: Utiliza o Google Apps Script para enviar e-mails de confirmação (conferir Spam).
 * **Integração com IA (Gemini)**: Cria uma mensagem de sucesso dinâmica e personalizada.
 * **Design Fiel à Marca**: Interface e componentes inspirados no site oficial da Clínica da Cidade.
-* **Totalmente Responsivo**: Funcional em desktops, tablets e telemóveis.
+
 
 ### 🛠️ Tecnologias Utilizadas
 
